@@ -1,0 +1,23 @@
+@import './var.css';
+@import './element.scss';
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ul li {
+  padding: 0;
+  margin: 0;
+}

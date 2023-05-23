@@ -1,0 +1,19 @@
+:root {
+  --left-menu-bg-color: #001529;
+  --left-menu-bg-active-color: #409eff;
+  --left-menu-text-color: #bfcbd9;
+  --left-menu-text-active-color: #fff;
+  --left-menu-min-width: 80px;
+  --left-menu-max-width: 200px;
+
+  --logo-height: 50px;
+
+  --header-height: 50px;
+
+  --report-color-success: #67c23a;
+  --report-color-error: #f56c6c;
+  --report-color-warning: #e6a23c;
+  --report-color-disabled: rgba(0, 0, 0, 0.25);
+
+  --primary-color: #1677ff;
+}

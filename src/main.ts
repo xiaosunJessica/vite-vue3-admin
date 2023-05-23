@@ -1,14 +1,22 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { setupStore } from '@/stores'
+// 引入element-plus
+import { setupElementPlus } from '@/plugins/elementPlus'
 
 import App from './App.vue'
 import router from './router'
+import '@/styles/index.scss'
+import './permission'
+const setupAll = async () => {
+  const app = createApp(App)
 
-const app = createApp(App)
+  setupStore(app)
 
-app.use(createPinia())
-app.use(router)
+  setupElementPlus(app)
 
-app.mount('#app')
+  app.use(router)
+
+  app.mount('#app')
+}
+
+setupAll()
